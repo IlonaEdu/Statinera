@@ -1,0 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*start*/
+
+body{
+    font-family: 'Inria Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./img/miestas.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex; 
+    width: 100%;
+    height: auto; 
+   background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 140px;
+    height: 100px;
+    margin: 0 50px;
+    background-image: url(img/logo_uab_white.png);
+    background-position: center, center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    transition: 0.33s;
+}
+ul {
+    width: 70%;
+    height: 100px;
+    display: inherit;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+li{
+    width: 100px;
+   height: auto;
+    margin: 8px;
+}
+a {
+   display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding:10px 0;
+    
+}
+.logo:hover{
+    width: 160px;
+    height: 110px;  
+}
+a:hover {
+    text-shadow: 1px 1px #F2780C;
+}
+.hero-inner {
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;  
+
+}
+.hero-inner h1{
+    font-size: 50px;
+    margin: 20px; 
+    color: #fff;
+    text-shadow: 2px 2px 2px #F2780C;       
+}
+
+.hero-inner h2 {
+    margin: 30px;
+    padding: 20px;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 30px; 
+}
+
+button {
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+    background-color:#F2780C;
+    border: none;
+    font-size: 30px;
+    color: #FFF;
+    font-family: "Inria Sans";
+    transition: 0.33s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px #F2780C;
+}
+.mobile_call {
+	display: none;
+}
+
+section{ 
+    margin: 0 auto;   
+    margin-top: 100px;
+    color: #000;
+    text-align: center;
+}
+
+main p {
+    color: #2E5559;
+    line-height: 1.6;
+}
+
+.first h2 {
+    width: 200px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.line{
+    width: 70px;
+    margin: 0 auto;
+    border-bottom: 2px solid #F2780C;
+}
+h3 a{
+    width: 220px;
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #000; 
+}
+.service{
+    display: inline-block;
+    width: 30%; 
+    height: 305px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: justify; 
+}
+
+.serv{
+    width: 80px;
+    height: 80px;
+    margin: 30px auto;
+    border-radius: 100%;
+    transition: 0.1s;
+}
+.serv:hover{
+    width: 70px;
+    height: 70px;
+    margin: 35px auto;
+    
+}
+.img1 {
+    
+    background-image: url(img/icon/icon1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2 {
+    background-image: url(img/icon/icon2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3 {
+    background-image: url(img/icon/icon3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4 {
+    background-image: url(img/icon/icon4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5 {
+    background-image: url(img/icon/icon5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6 {
+    background-image: url(img/icon/icon6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img7 {
+    background-image: url(img/icon/icon7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img8 {
+    background-image: url(img/icon/icon8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img9 {
+    background-image: url(img/icon/icon9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img10 {
+    background-image: url(img/icon/icon10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img11 {
+    background-image: url(img/icon/icon11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img12 {
+    background-image: url(img/icon/icon12.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img13 {
+    background-image: url(img/icon/icon13.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.second {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #f8f8f8;
+}
+.about {
+    width: 40%;
+    height: auto;
+    margin: 50px;
+    padding: 50px;
+    text-align: justify;
+}
+.img_about{
+    width: 40%;
+    height: 500px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+    background-image: url(img/statybos.jpg);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about, .img_about{
+	vertical-align: bottom;
+	
+}
+
+.line2{
+    width: 70px;
+    border-bottom: 2px solid #F2780C;
+}
+.second h2{
+    width: auto;
+    height: auto;
+    margin: 50px 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+    width: 100%;
+	height: auto;
+    }
+	.hero-inner {
+		width: 100%;
+	
+	}
+    .hero-inner h1{
+    font-size: 40px;
+    margin: 10px;
+    }
+
+.hero-inner h2 {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px; 
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+.first h2 {
+   
+    margin-bottom: 0px;
+    
+}
+    section{  
+    margin-top: 50px;
+}
+	.about {
+		margin: 0;
+	}
+	.img_about {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px){
+	.desktop_mail{
+		display: none;
+	}
+	.mobile_call {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 800px){
+    .service{
+    display:block;
+    width: 80%;
+	
+}   
+}
+@media only screen and (max-width: 1016px){
+	.about{
+		width: 60%;
+	}
+	.img_about{
+		width: 100%;
+		margin: 0;
+	}
+	.line2{
+		margin: 0 auto;
+	}
+	.second h2{
+		text-align: center;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
